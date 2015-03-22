@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<title>Complete Florida Common Application</title>
+	
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700" type="text/css" />
+	<!-- <link rel="icon" href="/icon.png" /> -->
+	
+	<!-- [if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif] -->
+	</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div id="header-brand">
+				<a href="index.html"><img id="header-cf-logo" src="media/cf-logo-1000px.png" alt="Complete Florida logo" /></a>
+				<p id="header-title">Complete<br />Florida</p>
+				</div>
+			<img id="header-menu-btn" src="media/menu.svg" alt="menu" />
+			<nav id="header-menu" class="disp-none">
+				<ul>
+					<li><a href="index.html">Log In</a></li>
+					<li><a href="apply.html">Apply</a></li>
+					<li><a href="instructions.html">Application Instructions</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	
+	<main>
+		<div class="field-odd">
+			<div class="container">
+				<h1>Application</h1>
+				<p>Please fill the questions below with the most up-to-date information. Fields are not validated in this demo and no information is captured.</p>
+				</div>
+			</div>
+		<div class="field-even">
+			<div class="container">
+				<h2>Personal Information</h2>
+				
+				<p>Part 1 of 8</p>
+				
+				<fieldset id="field-general">
+					<legend>General Information</legend>
+					
+					<label for="info-name-1" class="label">First Name</label>
+					<input id="info-name-1" name="info-name-1" type="text" class="input-text" autocapitalize="on" autocomplete="on" autocorrect="off" spellcheck="true" required />
+					
+					<label for="info-name-2" class="label">Middle Name</label>
+					<input id="info-name-2" type="text" class="input-text" autocapitalize="on" autocomplete="on" autocorrect="off" spellcheck="true" />
+					
+					<label for="info-name-3" class="label">Last Name</label>
+					<input id="info-name-3" type="text" class="input-text" autocapitalize="on" autocomplete="on" autocorrect="off" spellcheck="true" required />
+					
+					<label for="info-birthdate-month" class="label">Date of Birth</label>
+					<select id="info-birthdate-month" class="input-text input-select" required>
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03">March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+						</select>
+					<select id="info-birthdate-date" class="input-text input-select" required>
+						<option value="01">1</option>
+						<option value="02">2</option>
+						<option value="03">3</option>
+						<option value="04">4</option>
+						<option value="05">5</option>
+						<option value="06">6</option>
+						<option value="07">7</option>
+						<option value="08">8</option>
+						<option value="09">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+						</select>
+					<input id="info-birthdate-year" type="tel" class="input-text" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="YYYY" required />
+					
+					<label for="info-gender" class="label">Gender</label>
+					<select id="info-gender" class="input-text input-select" required>
+						<option value="" disabled hidden selected>Select</option>
+						<option value="female">Female</option>
+						<option value="male">Male</option>
+						</select>
+					
+					<label for="info-social" class="label">Social Security number</label>
+					<input id="info-social" type="tel" class="input-text" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="9 digits" required />
+					
+					<!-- <textarea id="" class="input-text" autocapitalize="on" autocomplete="off" autocorrect="on" spellcheck="true"></textarea> -->
+					</fieldset>
+					
+					<div id="submit-btn-container">
+						<button id="submit-btn">Save &amp; Continue</button>
+						</div>
+				</div>
+			</div>
+		</main>
+	
+	<footer>
+		<div class="container">
+			<p><a href="#">Help</a> <a href="#">FAQ</a> <a href="http://uwf.edu/innovation/">Innovation Institute</a></p>
+			</div>
+		</footer>
+	
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		var btnSubmit = document.getElementById('submit-btn');
+		function submit() {
+			window.location = 'apply2.html';
+			}
+		btnSubmit.addEventListener('click', submit);
+		</script>
+	</body>
+</html>
